@@ -32,14 +32,14 @@ end
 
 #4: Now use `puts` to print out just the ingredients without the amounts. You'll want to use the `each_key` method.
 def ingredients(perfect_10)
-  perfect_10.each do |ingredient|
+  perfect_10.each do |ingredient, amount|
     puts "#{ingredient}"
   end
 end
 
 #5: Now use `puts` to print out just the amounts without the ingredients. You'll want to use the `each_value` method.
 def amounts(perfect_10)
-  perfect_10.each do |amount|
+  perfect_10.each do |ingredient, amount|
     puts "#{amount}"
   end
 end
